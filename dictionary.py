@@ -2,13 +2,13 @@ from tkinter import *
 import tkinter.font as tkFont
 
 root = Tk()
-root.title("Connor's Dictionary") # The name that is displayed on the toolbar at the top of the frame
+root.title("Connor's Dictionary")
 
 # Declare constants
 TITLE = tkFont.Font(family = "Arial", size = 20)
 FONTS = tkFont.Font(family = "Arial", size = 12)
 
-# Declare the Dictionary itself
+# Create the Dictionary itself
 class my_dictionary(dict):
     def __init__(self):
         self = dict()
@@ -76,4 +76,4 @@ newValueLabel.grid(row = 3, column = 0)
 newValue = Entry(root, width = 50)
 newValue.grid(row = 3, column = 1)
 
-root.mainloop() # This is the loop to run the window 
+root.mainloop()
